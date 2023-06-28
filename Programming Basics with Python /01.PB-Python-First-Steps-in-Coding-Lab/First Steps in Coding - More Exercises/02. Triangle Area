@@ -1,1 +1,4 @@
-
+side_triangle = float(input())
+height_triangle = float(input())
+area_triangle = side_triangle * height_triangle / 2
+print(f'{area_triangle:.2f}')
