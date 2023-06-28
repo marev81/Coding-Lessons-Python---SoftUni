@@ -1,1 +1,34 @@
+#version 1
+width_hall_in_meters = float(input()) * 100      # rows
+height_hall_in_meters = float(input()) * 100        # columns
+num_of_rows = (width_hall_in_meters - 100) // 120
+num_of_columns = height_hall_in_meters // 70
+workplaces = int(num_of_columns * num_of_rows - 3)
+print(workplaces)
 
+#version_2
+import math
+width_hall_in_m = float(input())
+height_hall_in_m = float(input())
+width_hall_in_cm = width_hall_in_m * 100
+height_hall_in_cm = height_hall_in_m * 100
+place_width = 120
+place_height = 70
+corridor = 100
+num_of_rows = math.floor((width_hall_in_cm - corridor) / place_width)
+num_of_columns = math.floor(height_hall_in_cm / place_height)
+workplaces = (num_of_columns * num_of_rows) - 3
+print(workplaces)
+
+version_3
+width_hall_in_m = float(input())
+height_hall_in_m = float(input())
+width_hall_in_cm = width_hall_in_m * 100
+height_hall_in_cm = height_hall_in_m * 100
+place_width = 120
+place_height = 70
+corridor = 100
+num_of_rows = int((width_hall_in_cm - corridor) / place_width)
+num_of_columns = int(height_hall_in_cm / place_height)
+workplaces = (num_of_columns * num_of_rows) - 3
+print(workplaces)
