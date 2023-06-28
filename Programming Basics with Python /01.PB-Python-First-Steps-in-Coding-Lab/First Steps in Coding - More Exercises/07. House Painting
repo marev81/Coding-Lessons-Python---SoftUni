@@ -1,1 +1,20 @@
+width_house_x = float(input())
+length_house_y = float(input())
+height_roof_triangle_h = float(input())
+
+door_area = 2 * 1.2
+windows_area = 1.5 * 1.5 * 2
+roof_paint_per_sqm = 4.3
+wall_paint_per_sqm = 3.4
+
+area_of_front_back_walls = (width_house_x * width_house_x * 2) - door_area
+area_of_side_walls = (width_house_x * length_house_y * 2) - windows_area
+area_roof_rectangle = width_house_x * length_house_y * 2
+area_roof_triangle = (height_roof_triangle_h * width_house_x) / 2 * 2
+
+wall_paint = (area_of_front_back_walls + area_of_side_walls) / wall_paint_per_sqm
+roof_paint = (area_roof_triangle + area_roof_rectangle) / roof_paint_per_sqm
+
+print(f'{wall_paint:.2f}')
+print(f'{roof_paint:.2f}')
 
