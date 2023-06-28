@@ -1,0 +1,25 @@
+ordered_chicken_menu = int(input())
+ordered_fish_menu = int(input())
+ordered_vegetarian_menu = int(input())
+#
+price_chicken = 10.35
+price_fish = 12.40
+price_vegetarian = 8.15
+price_delivery = 2.50
+#
+sum_chicken = ordered_chicken_menu * price_chicken
+#print(sum_chicken)
+sum_fish = ordered_fish_menu * price_fish
+#print(sum_fish)
+sum_vegetarian = ordered_vegetarian_menu * price_vegetarian
+#print(sum_vegetarian)
+#
+middle_price_orders = sum_chicken + sum_fish + sum_vegetarian
+#
+price_dessert = (sum_chicken + sum_fish + sum_vegetarian) * 0.2
+#
+final_price_orders = middle_price_orders + price_dessert + price_delivery
+#
+print(final_price_orders)
+
+
