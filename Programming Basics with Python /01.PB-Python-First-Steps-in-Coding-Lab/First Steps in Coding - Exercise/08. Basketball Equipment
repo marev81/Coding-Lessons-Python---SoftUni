@@ -1,0 +1,12 @@
+annual_fee = int(input())
+shoes = annual_fee - (annual_fee*0.4)
+#print(shoes)
+outfit = shoes - (shoes*0.2)
+#print(outfit)
+ball = outfit * 0.25
+#print(ball)
+accessories = ball * 0.2
+#print(accessories)
+total_expences = annual_fee + shoes + outfit + ball + accessories
+#
+print(f"{total_expences:.2f}")
