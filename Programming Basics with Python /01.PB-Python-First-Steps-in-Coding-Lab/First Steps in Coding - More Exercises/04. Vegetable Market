@@ -1,1 +1,8 @@
+vegetabeles_price = float(input())
+fruits_price = float(input())
+vegetabeles_quantity = int(input())
+fruits_quantity = int(input())
 
+total_incomes_euro = (vegetabeles_quantity * vegetabeles_price + fruits_quantity * fruits_price) / 1.94
+
+print(f'{total_incomes_euro:.2f}')
