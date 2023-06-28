@@ -1,0 +1,12 @@
+pens = int(input())
+marker_pens = int(input())
+chemical = int(input())
+discount_percenteges = int(input())
+price_pens = 5.80
+price_markers_pens = 7.20
+price_chemical = 1.20
+total_price = (pens*price_pens) \
+              + (marker_pens*price_markers_pens) \
+              + (chemical*price_chemical)
+final_price = total_price - total_price*(discount_percenteges/100)
+print(final_price)
