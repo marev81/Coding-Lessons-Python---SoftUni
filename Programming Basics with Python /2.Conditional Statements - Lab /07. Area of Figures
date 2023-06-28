@@ -1,0 +1,23 @@
+from math import pi
+
+figure = input()
+area = 0.000000000000
+
+if figure == 'square':
+    side_sq= float(input())
+    area=side_sq*side_sq
+elif figure == 'rectangle':
+    side_a=float(input())
+    side_b=float(input())
+    area=side_a*side_b
+elif figure == 'circle':
+    radius=float(input())
+    area = pi * (radius ** 2)
+elif figure == 'triangle':
+    base = float(input())
+    hbase = float(input())
+    area = (base*hbase)/2
+
+result = round (area, 3)
+
+print (result)
